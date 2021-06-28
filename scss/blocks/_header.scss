@@ -1,0 +1,44 @@
+.header{
+   padding: 30px 0;
+   
+   .header__nav{
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+   }
+   
+   .nav__list{
+      display: flex;
+      align-items: center;
+      padding: 0;
+      
+      .nav__item{
+         margin-left: 40px;
+
+         &:nth-child(1){
+            margin-left: 0;
+         }
+         
+         .nav__link{
+            position: relative;
+            line-height: 19px;
+            color: $color-dark;
+            opacity: .6;
+            line-height: 19px;
+            transition: .3s linear;
+            
+            &:hover{
+               color: $color-orange;
+               opacity: 1;
+            }
+         }
+      }
+   }
+   
+   .nav__button{
+      position: relative;
+      @include button;
+      padding: 13px 30px;
+      transition: .3s cubic-bezier(0, 0.59, 0.84, 0.46);
+   }
+}

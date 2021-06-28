@@ -1,0 +1,38 @@
+.testimonial{
+   margin-bottom: 227px;
+
+   .testimonial__title{
+      font-family: $font;
+      color: $color-dark;
+      text-align: center;
+      font-size: 31.25px;
+      line-height: 24px;
+      margin-bottom: 23px;
+   }
+
+   .testimonial__text{
+      color: $color-dark;
+      opacity: .7;
+      text-align: center;
+      width: 750px;
+      margin: 0 auto;
+      margin-bottom: 73px;
+   }
+
+   .testimonial__list{
+      
+      .testimonial__item{
+         display: flex;
+         align-items: center;
+         justify-content: center;
+         flex-direction: column;
+      }
+
+      .testimonial__subtitle{
+         text-align: center;
+         width: 506px;
+         margin: 0 auto;
+         margin-top: 42px;
+      }
+   }
+}

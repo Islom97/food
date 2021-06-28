@@ -1,0 +1,63 @@
+$color-dark: #150C01;
+$color-orange: #DC780B;
+$font: 'Philosopher';
+
+@mixin button {
+   position: relative;
+   padding: 21px 37px 20px 40px;
+   color: #fff;
+   background-color: $color-orange;
+   border-radius: 5px;
+
+   &:hover{
+         color: $color-orange;
+         background-color: transparent;
+
+         &:after {
+            content: '';
+            display: block;
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            border-radius: 5px;
+            border: 3px solid $color-orange;
+         }
+      }
+}
+
+
+*,
+*::before,
+*::after{
+   box-sizing: border-box;
+   margin: 0;
+   padding: 0;
+}
+
+html{
+   scroll-behavior: smooth;
+}
+
+body{
+   font-family:'Roboto', sans-serif;
+   font-size: 16px;
+   line-height: 24px;
+   overflow-x: hidden;
+}
+
+ul{
+   list-style-type: none;
+}
+
+a{
+   text-decoration: none;
+   display: inline-block;
+}
+
+.container{
+   width: 1170px;
+   padding: 0 15px;
+   margin: 0 auto;
+}

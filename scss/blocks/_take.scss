@@ -1,0 +1,40 @@
+.take{
+   position: relative;
+   background: #fbf1e7a9;     
+   margin-bottom: 200px;
+   padding: 130px 0;
+
+   &::after{
+      content: '';
+      position: absolute;
+      width: 380px;
+      height: 700px;
+      background-image: url(../../img/telephon.png);
+      background-repeat: no-repeat;
+      background-size: cover;
+      top: -90px;
+      left: 750px;
+   }
+
+   .take__title{
+      width: 555px;
+      font-family: $font;
+      color: $color-dark;
+      color: $color-dark;
+      margin-bottom: 30px;
+   }
+
+   .take__text{
+      width: 555px;
+      margin-bottom: 40px;
+   }
+
+   .take__link{
+      margin-right: 30px;
+      transition: .4s ease;
+
+      &:hover{
+         opacity: 0.7;
+      }
+   }
+}

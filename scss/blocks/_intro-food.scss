@@ -1,0 +1,41 @@
+.intro-food{
+   margin-bottom: 105px;
+   
+   .intro-food__list{
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      
+      .intro-food__title{
+         width: 555px;
+         font-size: 48.83px;
+         line-height: 58px;
+         margin-bottom: 42px;
+         color: $color-dark;
+         font-family: $font;
+      }
+
+      .intro-food__text{
+         color: $color-dark;
+         width: 555px;
+         margin-bottom: 50px;
+      }
+
+      .intro-food__links{
+         display: flex;
+         align-items: center;
+
+         .intro-food__link{
+            @include button;
+            margin-right: 30px;
+            font-weight: 500;
+            transition: .3s ease;
+
+            &:nth-child(2){
+               background-color: transparent;
+               color: $color-orange;
+            }
+         }
+      }
+   }
+}

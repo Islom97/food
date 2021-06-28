@@ -1,0 +1,41 @@
+.about{
+   position: relative;
+   margin-bottom: 150px;
+
+   &::before{
+      content: '';
+      position: absolute;
+      width: 450px;
+      height: 950px;
+      background-image: url(../../img/home-svg.svg);
+      background-repeat: no-repeat;
+      background-size: cover;
+      top: -200px;
+      z-index: -1;
+   }
+
+   .about__list{
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      
+      .about__title{
+         width: 487px;
+         font-family: $font;
+         color: $color-dark;
+         font-size: 31.25px;
+         line-height: 41px;
+         margin-bottom: 30px;
+      }
+      .about__text{
+         width: 487px;
+         color: $color-dark;
+         margin-bottom: 30px;
+      }
+      .about__link{
+         @include button;
+         transition: .3s ease;
+         padding: 11px 34px 12px 30px;
+      }
+   }
+}
